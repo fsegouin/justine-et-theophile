@@ -17,9 +17,18 @@ const minifyItems = (records) =>
 
 // to make record meaningful.
 const getMinifiedItem = (record) => {
-  if (!record.fields.brought) {
-    record.fields.brought = false;
+  if (!record.fields.vegetarien) {
+    record.fields.vegetarien = false;
   }
+
+  if (!record.fields.samedi) {
+    record.fields.samedi = false;
+  }
+
+  if (!record.fields.brunch) {
+    record.fields.brunch = false;
+  }
+
   return {
     id: record.id,
     fields: record.fields,
