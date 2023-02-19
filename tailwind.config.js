@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
+        albatros: ['var(--font-albatros)'],
+        albatrosItalic: ['var(--font-albatros-italic)'],
+        cassandre: ['var(--font-cassandre)'],
+        caveat: ['var(--font-caveat)'],
       },
       colors: {
         primary: {
@@ -24,6 +28,7 @@ module.exports = {
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
         dark: '#222222',
+        darkGreen: 'rgb(97, 101, 81)',
       },
       keyframes: {
         flicker: {
