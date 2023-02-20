@@ -15,21 +15,25 @@ const albatros = localFont({
   src: '../../public/fonts/212.woff2',
   variable: '--font-albatros',
   preload: true,
+  display: 'block',
 });
 const albatrosItalic = localFont({
   src: '../../public/fonts/213.woff2',
   variable: '--font-albatros-italic',
   preload: true,
+  display: 'block',
 });
 const cassandre = localFont({
   src: '../../public/fonts/206.woff2',
   variable: '--font-cassandre',
   preload: true,
+  display: 'block',
 });
 const caveat = Caveat({
   subsets: ['latin'],
   variable: '--font-caveat',
   preload: true,
+  display: 'block',
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

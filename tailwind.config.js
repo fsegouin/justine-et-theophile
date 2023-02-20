@@ -8,14 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: [...fontFamily.serif],
-        albatros: ['var(--font-albatros)', 'ui-serif', 'Georgia', 'Cambria'],
-        albatrosItalic: [
-          'var(--font-albatros-italic)',
-          'ui-serif',
-          'Georgia',
-          'Cambria',
-        ],
-        cassandre: ['var(--font-cassandre)', 'ui-serif', 'Georgia', 'Cambria'],
+        albatros: ['var(--font-albatros)'],
+        albatrosItalic: ['var(--font-albatros-italic)'],
+        cassandre: ['var(--font-cassandre)'],
         caveat: ['var(--font-caveat)'],
       },
       colors: {
