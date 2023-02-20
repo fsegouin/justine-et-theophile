@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Element } from 'react-scroll';
+import Obfuscate from 'react-obfuscate';
 
 import Layout from '@/components/layout/Layout';
 import ResponseForm from '@/components/ResponseForm';
@@ -21,7 +21,7 @@ export default function HomePage() {
             id='hero'
             className='mb-4 flex h-full w-full flex-col items-center justify-center bg-[#c0c1b9] px-4 md:h-[calc(100vh-56px)]'
           >
-            <div className='my-20 md:mb-24'>
+            <div className='mb-20 mt-14 md:mb-24 md:mt-0'>
               <div className='text-center font-albatros text-4xl leading-[1.5] tracking-[8px] md:text-6xl md:tracking-[16px]'>
                 JUSTINE <span className='font-albatrosItalic'>&</span> THÉOPHILE
               </div>
@@ -114,10 +114,19 @@ export default function HomePage() {
               </div>
               <div className='mb-4 flex flex-col'>
                 <div className=''>Par téléphone :</div>
-                <div className='ml-4'>Justine : 06 66 75 29 77</div>
-                <div className='ml-4'>Théophile : 06 50 45 37 77</div>
+                <div className='ml-4'>
+                  Justine : <Obfuscate tel='+33666752977' />
+                </div>
+                <div className='ml-4'>
+                  Théophile : <Obfuscate tel='+33650453777' />
+                </div>
                 <div className='mt-4'>Par email :</div>
-                <div className='ml-4'>justine-et-theophile@gmail.com</div>
+                <div className='ml-4'>
+                  Justine : <Obfuscate email='js.segouin@gmail.com' />
+                </div>
+                <div className='ml-4'>
+                  Théophile : <Obfuscate email='theophile.belivier@gmail.com' />
+                </div>
               </div>
             </div>
           </section>
