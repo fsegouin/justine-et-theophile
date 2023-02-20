@@ -7,10 +7,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
-        albatros: ['var(--font-albatros)'],
-        albatrosItalic: ['var(--font-albatros-italic)'],
-        cassandre: ['var(--font-cassandre)'],
+        primary: [...fontFamily.serif],
+        albatros: ['var(--font-albatros)', 'ui-serif', 'Georgia', 'Cambria'],
+        albatrosItalic: [
+          'var(--font-albatros-italic)',
+          'ui-serif',
+          'Georgia',
+          'Cambria',
+        ],
+        cassandre: ['var(--font-cassandre)', 'ui-serif', 'Georgia', 'Cambria'],
         caveat: ['var(--font-caveat)'],
       },
       colors: {
