@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import * as React from 'react';
+// @ts-ignore
 import Obfuscate from 'react-obfuscate';
 
 import Layout from '@/components/layout/Layout';
