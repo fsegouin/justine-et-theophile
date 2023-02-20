@@ -14,19 +14,22 @@ import '@/styles/globals.css';
 const albatros = localFont({
   src: '../../public/fonts/212.woff2',
   variable: '--font-albatros',
+  preload: true,
 });
 const albatrosItalic = localFont({
   src: '../../public/fonts/213.woff2',
   variable: '--font-albatros-italic',
+  preload: true,
 });
 const cassandre = localFont({
   src: '../../public/fonts/206.woff2',
   variable: '--font-cassandre',
+  preload: true,
 });
 const caveat = Caveat({
   subsets: ['latin'],
-  weight: ['400', '700'],
   variable: '--font-caveat',
+  preload: true,
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
