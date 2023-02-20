@@ -8,7 +8,7 @@ const defaultMeta = {
   description: 'Justine et Théophile',
   url: 'https://justine-et-theophile.com',
   type: 'website',
-  robots: 'follow, index',
+  robots: 'nofollow, noindex',
   /**
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
@@ -49,10 +49,12 @@ export default function Seo(props: SeoProps) {
       <meta property='og:url' content={`${meta.url}${router.asPath}`} />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
-      <meta property='og:type' content={meta.type} />
-      <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content={meta.title} />
+      {/*
+          <meta property='og:type' content={meta.type} />
+          <meta property='og:site_name' content={meta.siteName} />
+          <meta property='og:description' content={meta.description} />
+          <meta property='og:title' content={meta.title} />
+          */}
       {/*
         <meta name='image' property='og:image' content={meta.image} />
       */}
@@ -77,14 +79,16 @@ export default function Seo(props: SeoProps) {
           />
         </>
       )}
-
       {/* Favicons */}
-      {favicons.map((linkProps) => (
-        <link key={linkProps.href} {...linkProps} />
-      ))}
-      <meta name='msapplication-TileColor' content='#ffffff' />
-      <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
-      <meta name='theme-color' content='#ffffff' />
+      {/*
+          {favicons.map((linkProps) => (
+            <link key={linkProps.href} {...linkProps} />
+          ))}
+          <meta name='msapplication-TileColor' content='#ffffff' />
+          <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
+          <meta name='theme-color' content='#ffffff' />
+          */}
+      )
     </Head>
   );
 }
