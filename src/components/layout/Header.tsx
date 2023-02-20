@@ -16,7 +16,7 @@ export default function Header() {
       <div className='layout flex flex-col items-center justify-between md:flex-row md:py-4'>
         <Link
           to='hero'
-          className='cursor-pointer py-4 font-bold uppercase hover:text-darkGreen md:py-0'
+          className='cursor-pointer py-4 font-bold hover:text-darkGreen md:py-0'
         >
           Justine <span className='font-albatrosItalic'>&</span> Théophile
         </Link>
